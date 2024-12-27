@@ -1,0 +1,311 @@
+image gallery:
+
+html:
+<html>
+  <head>
+    <title> image gallery</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1>profile links</h1>
+    <div class="profile">
+      <a href="https://www.example.com" target="">
+        <img src="myimg.jpg" alt="pics">
+      </a>
+      <p> my pic</p>
+    </div>
+     <div class="profile">
+      <a href="https://www.example.com" target="">
+        <img src="myimg.jpg" alt="friend pic">
+      </a>
+      <p> firend pic</p>
+    </div>
+  </body>
+</html>
+
+css:
+
+body{
+  font-family: Arial;
+  background-color: #f4f4f4;
+  color: #333;
+  text-align: center;
+  margin: 20px;
+}
+h1{
+  color: #333;
+}
+.profile{
+  display: inline-block;
+  margin: 20px;
+}
+.profile img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transition 0.3s;
+}
+.profile img: hover{
+  transform: scale(1.1);
+}
+
+----------------------------------------
+
+image gallery thumbnail:
+
+<html>
+  <head>
+    <title> image gallery</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1>image gallery</h1>
+    <div class="gallery">
+      <div class="gallery-item">
+        <a href="img1.jpg" target="_blank">
+          <img src="image1.jpg" alt="pic 1">
+        </a>
+         </div>
+      <div class="gallery-item">
+        <a href="img1.jpg" target="_blank">
+          <img src="image1.jpg" alt="pic 2">
+        </a>
+         </div>
+         <div class="gallery-item">
+        <a href="img1.jpg" target="_blank">
+          <img src="image1.jpg" alt="pic 3">
+        </a>
+         </div>
+         <div class="gallery-item">
+        <a href="img1.jpg" target="_blank">
+          <img src="image1.jpg" alt="pic 4">
+        </a>
+         </div>
+    </div>
+  </body>
+</html>
+
+css:
+
+body{
+  font-family: Arial;
+  background-color: #f4f4f4;
+  color: #333;
+  text-align: center;
+  margin: 20px;
+}
+h1{
+  color: #333;
+}
+.gallery;{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.gallery-item{
+  margin: 10px;
+}
+
+.gallery-item img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transition 0.3s;
+}
+.gallery-item img: hover{
+  transform: scale(1.1);
+}
+
+-------------------------------------
+
+js form program
+
+<html>
+  <head>
+    <title> js froms</title>
+    <link rel="stylesheet" href="styles.css">
+    <script >
+      function validationform(){
+        var x = document.forms["myfrom"]["fname"].value;
+        if(x==""){
+          alert("please enter the name");
+          return false;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h2> js test validation</h2>
+    <form name="myfrom" onsubmit="return validationform(") method=post>
+      Enter name: <input type="text" name="fname">
+      <input type="submit" value="submit"> </form>
+  </body>
+</html>
+
+----------------------------------------------
+
+popup msg program
+
+
+<html>
+ <body>
+   <h2> js confrim box</h2>
+   <button onclick="myfun()"> please try it</button>
+   <p id="confrim"> </p>
+   <script>
+     function myfun(){
+       var txt;
+       if(confirm("please press a buttton!")){
+         txt =" you pressed buttton!";
+       }
+       else{
+         txt = "you pressed cancel buttton";
+       }
+       document.getElementById("confrim").innerHTML = txt;
+     }
+   </script>
+ </body>
+</html>
+
+
+---------------------------------------------------
+
+dispalying alert msg using prompt
+
+<html>
+ <body>
+   <h2> js prompt example box</h2>
+   <button onclick="myfun()"> please try for prompt msg</button>
+   <p id="confrim"> </p>
+   <script>
+     function myfun(){
+       var txt;
+       let user=prompt("please enter your name:","Jaco");
+       
+       if(user==null || user==""){
+         txt ="user canceled the prompt";
+       }
+       else{
+         txt = "HEllo " + user + " ,how are you?";
+       }
+       document.getElementById("confrim").innerHTML = txt;
+     }
+   </script>
+ </body>
+</html>
+
+---------------------------------------------------
+
+js timmer
+
+<html>
+ <body>
+   <h2> js timingsample example</h2>
+   <p > click on "try it" ,wait 5 sec </p>
+   <button onclick="setTimeout(myfun,5000)"> click here</button>
+   <script>
+     function myfun(){
+       alert("hello");
+       
+     }
+   </script>
+ </body>
+</html>
+
+-----------------------------------------------
+
+mutliplication table:
+
+
+<html>
+ <body>
+   <h2> js mutliplucation table example</h2>
+   <script>
+     var num;
+     num = prompt("enter a number:");
+     document.writeln(num + " table <br>" );
+     for(let i=0;i<=10;i++){
+       document.writeln(num + "x" + i + " =" + num*i +"<br>");
+       
+     }
+   </script>
+   </script>
+ </body>
+</html>
+
+---------------------------------------------
+
+even or oddd
+
+<html>
+ <body>
+   <h2> js mutliplucation table example</h2>
+   <script>
+     var num;
+     num = prompt("enter a number:");
+     if(num%2==0){
+       document.write("it is a even number");
+       
+     }
+     else{
+       document.write("its a odd number");
+     }
+   </script>
+   </script>
+ </body>
+</html>
+---------------------------------------------
+
+factioral
+
+<html>
+ <body>
+   <h2> js mutliplucation table example</h2>
+   <script>
+     var num,fact=1;
+     num = prompt("enter a number:");
+     for(let i=1;i<=num;i++){
+       fact = fact*i;
+
+     }
+     document.write(fact);
+   </script>
+   </script>
+ </body>
+</html>
+
+--------------------------------------------
+
+date:
+
+
+<html>
+ <body>
+   <h2> date</h2></h2>
+   <script>
+     var today = new Date();
+     var dd = today.getDate();
+     var mm = today.getMonth()+1;
+     var yyyy = today.getFullYear();
+     if( dd<10){
+       dd= "0"+dd;
+       
+     }
+     if(mm <10){
+       mm = "0"+mm;
+     }
+     today = mm +"-" + dd +"-" + yyyy;
+     console.log(today);
+     today = mm +"/" + dd +"/" + yyyy;
+     console.log(today);
+     today = dd +"-" + mm +"-" + yyyy;
+     console.log(today);
+     today = dd +"/" + mm +"/" + yyyy;
+     console.log(today);
+   </script>
+   </script>
+ </body>
+</html>
+
